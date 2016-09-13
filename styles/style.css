@@ -1,0 +1,110 @@
+/*Place the Header/Title section across the top of the site with a border and appropriate background color.*/
+
+/*Provide an appropriate background color for the main content section*/
+
+/*Select appropriate fonts & colors for text on the site.
+Make the navigation links display different colors when the mouse rolls over the link.*/
+
+/*Use CSS styling to hide the bullet-points of the unordered lists in the site.*/
+/*Place the Footer section across the entire bottom of the site with a border and an appropriate background color*/
+/*Page Specific Styling:
+
+index.html
+use CSS styling to hide the bullet-points of the unordered list containing the book images.
+use CSS styling to make all the images the same height
+eloquentRuby.html
+The Eloquent Ruby book image should be left-aligned with the details about the book to the right of it.
+contact.html*/
+/*The site maintainer photo should be left-aligned and the message about contacting the site maintainer to the right of it.*/
+
+
+header {
+  position: relative;
+  background-color: rgb(154, 6, 6);
+  border: dotted;
+  padding: 30px;
+  font: cursive;
+  color: rgb(255, 255, 255);
+
+}
+
+body {
+  background-color: rgba(244, 38, 38, 0.51);
+  padding: 25px;
+  margin: 25px;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+a:hover {
+  font-weight: bold;
+  color: rgb(255,255,255);
+}
+
+ul {
+ list-style: none;
+}
+
+footer {
+  clear: both;
+  position: relative;
+  background-color: rgb(108, 13, 0);
+  color: rgb(255, 255, 255);
+  padding: 5px 5px 5px 15px;
+}
+
+nav ul li{
+  float: left;
+  padding-right: 50px;
+  padding-bottom: 33px;
+}
+
+.leftphoto {
+  float: left;
+  padding-right: 100px;
+  padding-bottom: 50px;
+}
+
+.below-image {
+  clear: left;
+  /*background-color: green;*/
+}
+
+.box {
+  border: dotted;
+  border-color: rgb(255, 255, 255);
+}
+
+.picture-gallery li {
+  float: left;
+  padding: 5px 5px 5px 5px;
+}
+
+.picture-gallery li img {
+  height: 300px;
+}
+
+.social-gallery li{
+  float: left;
+  margin: 5px 0px 5px 5px;
+}
+
+#lauren-photo {
+  float: left;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  -webkit-transition: -webkit-transform 2s ease-in-out;
+          transition:         transform 2s ease-in-out;
+
+}
+
+#lauren-photo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+#bloop {
+  font-size: 4em;
+}
